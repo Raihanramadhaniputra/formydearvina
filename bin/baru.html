@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Amplop Merah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Bungee&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!-- shared drawings -->
+<svg class="defs" aria-hidden="true" width="0" height="0" focusable="false">
+  <defs>
+    <clipPath id="heartClip" clipPathUnits="objectBoundingBox">
+      <path d="M0.5,0.97 C0.12,0.66 0,0.46 0,0.29 C0,0.11 0.14,0 0.27,0 C0.37,0 0.46,0.06 0.5,0.15 C0.54,0.06 0.63,0 0.73,0 C0.86,0 1,0.11 1,0.29 C1,0.46 0.88,0.66 0.5,0.97Z"/>
+    </clipPath>
+    <radialGradient id="roseG" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#e5303c"/><stop offset=".6" stop-color="#b30f1c"/><stop offset="1" stop-color="#6e0610"/></radialGradient>
+    <linearGradient id="leafG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3f8a3a"/><stop offset="1" stop-color="#1d4a1d"/></linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2f2f2"/><stop offset=".5" stop-color="#bdbdbd"/><stop offset="1" stop-color="#8d8d8d"/></linearGradient>
+    <radialGradient id="glass" cx="38%" cy="34%" r="70%"><stop offset="0" stop-color="#8fa8c8"/><stop offset=".45" stop-color="#26344a"/><stop offset="1" stop-color="#070b12"/></radialGradient>
+    <linearGradient id="boxG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9c0d17"/><stop offset=".5" stop-color="#d21f2c"/><stop offset="1" stop-color="#9c0d17"/></linearGradient>
+    <linearGradient id="ribG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b8861f"/><stop offset=".5" stop-color="#f3d98b"/><stop offset="1" stop-color="#b8861f"/></linearGradient>
+    <g id="bw">
+      <path d="M60 46 C68 18 100 -2 114 14 C124 28 106 50 84 54 C74 56 66 52 60 50Z" fill="#d91f1f" stroke="#111" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M60 52 C70 56 96 60 98 78 C100 92 78 94 66 76 C62 70 60 62 60 52Z" fill="#c8161c" stroke="#111" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M60 50 L104 22 M60 50 L98 44 M60 54 L88 78" stroke="#111" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+      <circle cx="109" cy="22" r="2.6" fill="#fff"/><circle cx="115" cy="32" r="2.4" fill="#fff"/><circle cx="104" cy="46" r="2.4" fill="#fff"/><circle cx="92" cy="54" r="2.2" fill="#fff"/>
+      <circle cx="94" cy="84" r="2.6" fill="#f2c230"/><circle cx="82" cy="90" r="2.2" fill="#f2c230"/>
+    </g>
+  </defs>
+  <symbol id="rose" viewBox="0 0 100 100">
+    <path d="M50 8C72 4 94 22 92 48 90 74 68 94 46 92 22 90 6 70 9 46 12 24 30 10 50 8Z" fill="url(#roseG)"/>
+    <path d="M50 20C68 18 82 32 80 50 78 68 62 80 46 78 30 76 20 62 22 48 24 32 36 22 50 20Z" fill="#c2121f" stroke="#7a0712" stroke-width="1.6"/>
+    <path d="M48 32C60 30 70 40 68 52 66 62 56 68 46 66 36 64 32 54 36 46 40 38 44 34 48 32Z" fill="#d8202c" stroke="#7a0712" stroke-width="1.6"/>
+    <path d="M46 42C54 40 60 46 58 52 56 58 50 60 44 58 40 56 40 48 46 42Z" fill="#a50c18" stroke="#6e0610" stroke-width="1.6"/>
+    <path d="M44 48C48 46 52 48 52 52" fill="none" stroke="#5a0510" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="leaf" viewBox="0 0 60 30">
+    <path d="M2 15C14 0 40 0 58 15 40 30 14 30 2 15Z" fill="url(#leafG)"/><path d="M4 15H56" stroke="#163816" stroke-width="1.4"/>
+  </symbol>
+  <symbol id="cluster" viewBox="0 0 170 150">
+    <use href="#leaf" x="0" y="64" width="64" height="32" transform="rotate(-28 32 80)"/>
+    <use href="#leaf" x="104" y="74" width="64" height="32" transform="rotate(22 136 90)"/>
+    <use href="#leaf" x="46" y="112" width="60" height="30" transform="rotate(80 76 127)"/>
+    <use href="#rose" x="10" y="28" width="86" height="86"/>
+    <use href="#rose" x="84" y="4" width="68" height="68"/>
+    <use href="#rose" x="66" y="62" width="60" height="60"/>
+  </symbol>
+  <symbol id="butterfly" viewBox="0 0 120 100">
+    <use href="#bw"/>
+    <g transform="translate(120 0) scale(-1 1)"><use href="#bw"/></g>
+    <ellipse cx="60" cy="52" rx="3.4" ry="21" fill="#111"/>
+    <path d="M59 32Q52 20 46 17M61 32Q68 20 74 17" stroke="#111" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="plum" viewBox="-50 -50 100 100">
+    <g fill="#fff6f8" stroke="#e7a0b2" stroke-width="1.6">
+      <ellipse cx="0" cy="-22" rx="15" ry="25"/>
+      <ellipse cx="0" cy="-22" rx="15" ry="25" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-22" rx="15" ry="25" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-22" rx="15" ry="25" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-22" rx="15" ry="25" transform="rotate(288)"/>
+    </g>
+    <circle r="8" fill="#f7c948"/>
+  </symbol>
+  <symbol id="heart" viewBox="0 0 100 90">
+    <path d="M50 86C14 56 2 38 2 24 2 10 13 2 26 2c10 0 19 6 24 15C55 8 64 2 74 2c13 0 24 8 24 22 0 14-12 32-48 62Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="camera" viewBox="0 0 200 130">
+    <rect x="10" y="30" width="180" height="84" rx="9" fill="url(#silver)" stroke="#6c6c6c" stroke-width="1.5"/>
+    <rect x="22" y="16" width="156" height="20" rx="5" fill="url(#silver)" stroke="#6c6c6c" stroke-width="1.5"/>
+    <rect x="34" y="6" width="28" height="14" rx="3" fill="#cfcfcf" stroke="#6c6c6c"/>
+    <circle cx="150" cy="12" r="10" fill="#d6d6d6" stroke="#6c6c6c"/>
+    <rect x="10" y="52" width="48" height="54" rx="6" fill="#191919"/>
+    <rect x="142" y="52" width="48" height="54" rx="6" fill="#191919"/>
+    <rect x="68" y="38" width="26" height="9" rx="2" fill="#262626" stroke="#8a8a8a"/>
+    <circle cx="100" cy="76" r="36" fill="#2b2b2b" stroke="#a9a9a9" stroke-width="2"/>
+    <circle cx="100" cy="76" r="29" fill="#0e0e0e" stroke="#d0d0d0" stroke-width="1.5"/>
+    <circle cx="100" cy="76" r="21" fill="url(#glass)"/>
+    <circle cx="100" cy="76" r="8" fill="#02040a"/>
+    <circle cx="91" cy="67" r="4" fill="#fff" opacity=".45"/>
+  </symbol>
+  <symbol id="giftico" viewBox="0 0 120 124">
+    <rect x="14" y="58" width="92" height="60" rx="4" fill="url(#boxG)"/>
+    <rect x="8" y="42" width="104" height="22" rx="4" fill="url(#boxG)"/>
+    <rect x="52" y="42" width="16" height="76" fill="url(#ribG)"/>
+    <path d="M60 42C44 40 28 34 30 22 32 10 52 14 60 42Z M60 42C76 40 92 34 90 22 88 10 68 14 60 42Z" fill="#e8b838" stroke="#a97a14" stroke-width="2"/>
+    <circle cx="60" cy="42" r="7" fill="#f3d98b" stroke="#a97a14" stroke-width="1.5"/>
+  </symbol>
+  <symbol id="cam-mini" viewBox="0 0 24 24">
+    <path d="M4 7h3l1.5-2h7L17 7h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <circle cx="12" cy="13" r="3.6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  </symbol>
+</svg>
+
+<main class="stage">
+
+  <!-- 1. Amplop -->
+  <section class="scene on" id="s-cover" aria-label="Amplop">
+    <div class="inner cover">
+      <h1 class="script big">Press the Envelope</h1>
+      <button class="env" id="envBtn" type="button" aria-label="Buka amplop">
+        <span class="env-back"></span>
+        <span class="env-note"></span>
+        <span class="env-front"></span>
+        <span class="env-flap"><span class="seal"></span></span>
+      </button>
+      <p class="hint">tap untuk membuka</p>
+    </div>
+  </section>
+
+  <!-- 2. Kartu -->
+  <section class="scene" id="s-card" aria-label="Kartu mensiversary">
+    <div class="inner">
+      <div class="collage">
+        <div class="c-heart"><div class="ph" data-photo="heart" data-label="Foto berdua"></div></div>
+        <div class="c-tilt"><div class="ph" data-photo="tilt" data-label="Foto kamu"></div></div>
+        <div class="c-mid">
+          <div class="kraft"></div>
+          <div class="paper-wrap">
+            <div class="paper">
+              <h2>Happy mensiversaryy</h2>
+              <p class="date" id="dateLabel"></p>
+            </div>
+          </div>
+          <svg class="deco d-rose" viewBox="0 0 170 150" aria-hidden="true"><use href="#cluster"/></svg>
+        </div>
+        <div class="c-strip">
+          <div class="ph" data-photo="strip1" data-label="Foto 1"></div>
+          <div class="ph" data-photo="strip2" data-label="Foto 2"></div>
+          <div class="ph" data-photo="strip3" data-label="Foto 3"></div>
+        </div>
+        <svg class="deco d-fly" viewBox="0 0 120 100" aria-hidden="true"><use href="#butterfly"/></svg>
+        <svg class="deco d-plum" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#plum"/></svg>
+      </div>
+      <button class="tap" type="button" data-go="menu">Tap for surprise</button>
+    </div>
+  </section>
+
+  <!-- 3. Pilih kejutan -->
+  <section class="scene" id="s-menu" aria-label="Pilih kejutan">
+    <div class="rays" aria-hidden="true"></div>
+    <div class="inner">
+      <h2 class="script big">Choose the Surprise</h2>
+      <div class="choices">
+        <button class="choice" type="button" data-go="journey">
+          <span class="ico"><svg viewBox="0 0 200 130" aria-hidden="true"><use href="#camera"/></svg></span>
+          <span class="lbl">Journey</span>
+        </button>
+        <button class="choice" type="button" data-go="moment">
+          <span class="ico watch" data-watch></span>
+          <span class="lbl">Moment</span>
+        </button>
+        <button class="choice" type="button" data-go="playlist">
+          <span class="ico"><span class="vinyl"></span></span>
+          <span class="lbl">Playlist</span>
+        </button>
+        <button class="choice" type="button" data-go="gift">
+          <span class="ico"><svg viewBox="0 0 120 124" aria-hidden="true"><use href="#giftico"/></svg></span>
+          <span class="lbl">Gift</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Journey -->
+  <section class="scene" id="s-journey" aria-label="Journey">
+    <div class="inner">
+      <div class="bar">
+        <h2 class="script med">Our Journey</h2>
+        <button class="back" type="button" data-go="menu">BACK &#9666;</button>
+      </div>
+      <div class="j-grid" id="jGrid" data-group="journey">
+        <svg class="sticker st-heart" viewBox="0 0 100 90" aria-hidden="true"><use href="#heart"/></svg>
+        <svg class="sticker st-heart2" viewBox="0 0 100 90" aria-hidden="true"><use href="#heart"/></svg>
+        <svg class="sticker st-wax" viewBox="0 0 100 90" aria-hidden="true"><use href="#heart"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Moment -->
+  <section class="scene" id="s-moment" aria-label="Moment">
+    <div class="inner">
+      <div class="bar">
+        <h2 class="script med" id="momentTitle">Untuk Kamu</h2>
+        <button class="back" type="button" data-go="menu">BACK &#9666;</button>
+      </div>
+      <div class="moment-grid">
+        <div class="letter-wrap">
+          <div class="letter" id="letter"></div>
+          <svg class="deco d-roses-l" viewBox="0 0 170 150" aria-hidden="true"><use href="#cluster"/></svg>
+        </div>
+        <div class="frame-wrap">
+          <div class="frame"><div class="ph" data-photo="moment" data-label="Foto berdua"></div></div>
+          <svg class="deco d-cam" viewBox="0 0 200 130" aria-hidden="true"><use href="#camera"/></svg>
+        </div>
+      </div>
+      <div class="clock-row">
+        <div class="watch" data-watch></div>
+        <div class="since" id="since"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Playlist -->
+  <section class="scene" id="s-playlist" aria-label="Playlist">
+    <div class="inner">
+      <div class="bar">
+        <h2 class="script med" id="plTitle">Our Playlist</h2>
+        <button class="back" type="button" data-go="menu">BACK &#9666;</button>
+      </div>
+      <div class="pl-grid">
+        <div class="video-wrap">
+          <div class="video-frame" id="videoFrame"></div>
+        </div>
+        <div class="gallery" data-group="pl">
+          <div class="gframe"><div class="ph" data-photo="p1" data-label="Foto 1"></div></div>
+          <div class="gframe"><div class="ph" data-photo="p2" data-label="Foto 2"></div></div>
+          <div class="gframe"><div class="ph" data-photo="p3" data-label="Foto 3"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Gift -->
+  <section class="scene" id="s-gift" aria-label="Gift">
+    <div class="inner">
+      <div class="bar">
+        <h2 class="script med">Your Gift</h2>
+        <button class="back" type="button" data-go="menu">BACK &#9666;</button>
+      </div>
+      <div class="gift-wrap" id="giftWrap">
+        <button class="gift" id="giftBtn" type="button" aria-label="Buka kado">
+          <span class="g-glow"></span>
+          <span class="g-body"></span>
+          <span class="g-lid"><span class="g-bow"><i></i></span></span>
+        </button>
+        <p class="hint gift-hint">tap kadonya</p>
+        <div class="coupon" id="coupon">
+          <h3>Kupon Spesial</h3>
+          <p class="sub" id="couponSub">Berlaku kapan saja kamu mau</p>
+          <ul id="gifts"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="confetti" id="confetti" aria-hidden="true"></div>
+
+<div class="lb" id="lb" aria-hidden="true" role="dialog" aria-label="Foto">
+  <button class="lb-btn lb-x" id="lbX" type="button" aria-label="Tutup">&#10005;</button>
+  <button class="lb-btn lb-prev" id="lbP" type="button" aria-label="Sebelumnya">&#8249;</button>
+  <button class="lb-btn lb-next" id="lbN" type="button" aria-label="Berikutnya">&#8250;</button>
+  <figure class="lb-fig">
+    <div class="lb-img" id="lbImg"></div>
+    <figcaption class="lb-cap" id="lbCap"></figcaption>
+  </figure>
+</div>
+<button class="music-btn off" id="musicBtn" type="button" aria-label="Putar atau jeda musik" hidden>
+  <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5H4Z" fill="currentColor"/>
+    <path class="wave" d="M15.5 9a4.2 4.2 0 0 1 0 6M18 6.5a7.6 7.6 0 0 1 0 11"/>
+    <path class="slash" d="M16 9.5l5 5M21 9.5l-5 5"/>
+  </svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
